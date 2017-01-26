@@ -5,4 +5,5 @@
     <color name="colorAccent">#FF4081</color>
     <color name="dark_green">#009933</color>
     <color name="light_green">#80ffaa</color>
+    <color name="faded_green">#baffaa</color>
 </resources>
