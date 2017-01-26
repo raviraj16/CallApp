@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.call.app.ui.HomeActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:id="@+id/home_phone_number_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/white"
+                android:elevation="@dimen/_5sdp"
+                android:gravity="center"
+                android:hint="@string/phone_number"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:inputType="phone"
+
+                android:maxLength="10"
+                android:paddingBottom="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:textSize="@dimen/_18ssp" />
+
+            <TextView
+                android:id="@+id/home_call_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/home_container_sim_ll"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/background_dark"
+                android:elevation="@dimen/_5sdp"
+                android:gravity="center"
+                android:paddingBottom="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_45sdp"
+                android:paddingRight="@dimen/_45sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:text="@string/call"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_20ssp" />
+
+
+            <LinearLayout
+                android:id="@+id/home_container_sim_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_phone_number_et"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_200sdp">
+
+                <TextView
+                    android:id="@+id/home_sim_one_txt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:background="@drawable/green_background_selector"
+                    android:elevation="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:text="@string/sim_one"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_20ssp" />
+
+                <TextView
+                    android:id="@+id/home_sim_two_txt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/green_background_selector"
+                    android:elevation="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:text="@string/sim_two"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_20ssp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

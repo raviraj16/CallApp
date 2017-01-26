@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Call App</string>
+    <string name="phone_number">Phone number</string>
+    <string name="call">Call</string>
+    <string name="sim_one">Sim 1</string>
+    <string name="sim_two">Sim 2</string>
+
+    <string name="validation_invalid_phone_number">Invalid Phone Number</string>
+    <string name="permission_granted">Permission granted</string>
+    <string name="permission_permanently_denied">Permission denied permanently</string>
+    <string name="permission_denied">Permission denied</string>
+    <string name="permission_rationale">Permission Required</string>
+    <string name="needed_permission">Need permission</string>
+</resources>
