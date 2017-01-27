@@ -1,10 +1,9 @@
-package com.call.app.ui;
+package com.call.app.ui.activity;
 
 import android.Manifest;
 import android.content.Intent;
 import android.net.Uri;
 import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -12,7 +11,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.call.app.R;
-import com.call.app.ui.activity.BaseActivity;
 import com.call.app.utils.Prefs;
 import com.greysonparrelli.permiso.Permiso;
 
@@ -49,7 +47,9 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener {
         setSimOneSelected(Prefs.getInstance().getSimOneSelection());
         home_phone_number_et.setText(Prefs.getInstance().getPhoneNumber().trim());
         home_phone_number_et.setSelection(home_phone_number_et.length());
+        home_phone_number_et.setEnabled(false);
         home_call_txt.requestFocus();
+
 
     }
 
@@ -70,8 +70,8 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener {
             home_sim_one_txt.setSelected(false);
             home_sim_two_txt.setSelected(true);
             Prefs.getInstance().setSimOneSelection(false);
-
         }
+        home_phone_number_et.setEnabled(true);
     }
 
     @Override
