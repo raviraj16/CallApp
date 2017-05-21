@@ -53,7 +53,8 @@
                 android:layout_centerHorizontal="true"
                 android:background="@drawable/black_background_selector"
                 android:elevation="@dimen/_5sdp"
-                android:gravity="center"
+                android:gravity="center|center_horizontal"
+
                 android:paddingBottom="@dimen/_10sdp"
                 android:paddingLeft="@dimen/_45sdp"
                 android:paddingRight="@dimen/_45sdp"
